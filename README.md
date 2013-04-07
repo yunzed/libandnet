@@ -1,12 +1,14 @@
 libandnet
 =========
 
-Wrapper of NIO, use a single thread to handle the select operation. To use it, create a class to derive from IProtoLinkHandler,
-and handle the onConnected, onData, onDisconnect, onTimer events.
+Wrapper of NIO, use a single thread to handle the select operation. To use it, create a class to derive from IProtoLinkHandler, and handle the onConnected, onData, onDisconnect, onTimer events.
 
 Example:
+<br/>
 
-public class SomeLink implements IProtoLinkHandler {
+<code>
+public class SomeLink implements IProtoLinkHandler 
+{
 	private ProtoLink mLink = null;
 	
 	public SomeLink() {
@@ -38,3 +40,4 @@ public class SomeLink implements IProtoLinkHandler {
 	public void onTimer(int id) {
 	}
 }
+</code>
